@@ -13,9 +13,9 @@ ENV APACHE_LOG_DIR /var/log/apache2
 
 # Download jbrowse
 WORKDIR /var/www
-RUN wget -O JBrowse-1.11.4.zip http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=95
-RUN unzip /var/www/JBrowse-1.11.4.zip
-WORKDIR /var/www/JBrowse-1.11.4
+RUN wget -O JBrowse-1.11.5.zip http://jbrowse.org/wordpress/wp-content/plugins/download-monitor/download.php?id=98
+RUN unzip /var/www/JBrowse-1.11.5.zip
+WORKDIR /var/www/JBrowse-1.11.5
 
 # Install jbrowse
 RUN ./setup.sh
