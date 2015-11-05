@@ -2,9 +2,9 @@
 ##docker-jbrowse##
 ==============
 
-**Docker recipe for JBrowse**
+**[Docker](https://www.docker.com/) recipe for JBrowse**
 
-## Running Docker-JBrowse inside a [Docker](https://www.docker.com/) container
+#Getting up and running:
 
 **Make sure you have [Docker installed](https://docs.docker.com/installation/ubuntulinux/).**
 ```
@@ -21,7 +21,7 @@ $ docker build -t docker-jbrowse .
 $ docker run -it --name jbrowse -p 8080:80 docker-jbrowse
 ```
 
-**OR**
+##OR
 
 **Build and run `dockerjbrowse` using `docker-compose`:**
 ```
@@ -31,4 +31,4 @@ $ docker-compose up
 
 **Access JBrowse on DOCKER_IP:8080, type `$ ip add | grep docker`:**
 
-    * `http://172.17.X.X:8080`
+     `http://172.17.X.X:8080`
