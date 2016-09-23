@@ -1,4 +1,9 @@
-dockerjbrowse:
-  build: .
-  ports:
-   - "8080:80"
+version: '2'
+services:
+  dockerjbrowse:
+    build: .
+    image: dockerjbrowse
+    container_name: dockerjbrowse
+    ports:
+      - "8080:80"
+   
