@@ -8,10 +8,10 @@ RUN apt-get install -y build-essential libpng-dev zlib1g-dev libgd2-xpm-dev curl
 
 # Download jbrowse
 WORKDIR /
-RUN curl -O http://jbrowse.org/releases/JBrowse-1.11.6.zip
-RUN unzip JBrowse-1.11.6.zip && rm JBrowse-1.11.6.zip
+RUN curl -O http://jbrowse.org/releases/JBrowse-1.12.1.zip
+RUN unzip JBrowse-1.12.1.zip && rm JBrowse-1.12.1.zip
 # Clean dir name? :-)
-RUN mv JBrowse-1.11.6 jbrowse 
+RUN mv JBrowse-1.12.1.zip 
 WORKDIR /jbrowse
 
 # Install jbrowse
